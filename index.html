@@ -5,9 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Homework - js-data-types</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-  
+  <div class="calculator">
+      <h1 class="calculator__title">I want to multiply</h1>
+      <div class="calculator__input-group">
+        <label for="depositAmount" class="calculator__label">Deposit Amount:</label>
+        <input id="depositAmount" class="calculator__input calculator__input--money" type="number" placeholder="Enter amount" required>
+      </div>
+      <div class="calculator__input-group">
+        <label for="month" class="calculator__label">Term (Months):</label>
+        <select class="calculator__input calculator__input--term" name="month" id="month" required>
+          <option value="1">1 month</option>
+          <option value="2">2 months</option>
+          <option value="3">3 months</option>
+          <option value="4">4 months</option>
+          <option value="5">5 months</option>
+          <option value="6">6 months</option>
+          <option value="7">7 months</option>
+          <option value="8">8 months</option>
+          <option value="9">9 months</option>
+          <option value="10">10 months</option>
+          <option value="11">11 months</option>
+          <option value="12">12 months</option>
+          <option value="13">13 months</option>
+          <option value="14">14 months</option>
+          <option value="15">15 months</option>
+          <option value="16">16 months</option>
+          <option value="17">17 months</option>
+          <option value="18">18 months</option>
+          <option value="19">19 months</option>
+          <option value="20">20 months</option>
+          <option value="21">21 months</option>
+          <option value="22">22 months</option>
+          <option value="23">23 months</option>
+          <option value="24">24 months</option>
+        </select>
+      </div>
+      <div class="calculator__input-group">
+        <label for="depositPercent" class="calculator__label">Interest Rate:</label>
+        <select class="calculator__input calculator__input--percentage" name="percent" id="depositPercent" required>
+          <option class="standard-percentage" value="0.05">5%, standard EUR</option>
+          <option class="standard-percentage" value="0.06">6%, standard USD</option>
+          <option class="premium-percentage" value="0.07" hidden>7%, premium EUR</option>
+          <option class="premium-percentage" value="0.09" hidden>9%, premium USD</option>
+        </select>
+      </div>
+      <button class="calculator__button" type="button" id="action-button">CALCULATE</button>
+    <div class="calculator__container">
+      <h2 class="calculator__subtitle">I will receive</h2>
+      <span class="calculator__result" id="calculator__result">0</span>
+      <span class="calculator__result calculator__result-currency">€</span>
+    </div>
+  </div>
 </body>
 </html>
